@@ -23,7 +23,9 @@ In this project, we highlight the impact of seasonal variation in the transmissi
 ## Methodology
 
 - **SEIR Model**: We use the SEIR model to simulate the dynamics of measles outbreaks. The model equations are extended to include birth and death rates.
-<img src="images/SEIR model with more details.png">
+
+![SEIR model](images/SEIR model with more details.png)
+
 - **Sinusoidal Transmission Rate**: The transmission rate $ \beta(t) $ is modeled as:
   $$
   \beta(t) = \beta_0 \left(1 + 0.03 \sin(\frac{2\pi t}{365})\right)
@@ -40,7 +42,14 @@ The plots below illustrate the fit of the SEIR model to observed measles case da
 
 ## Conclusion
 
-The results of our simulations indicate that the seasonal variation in the transmission rate significantly affects the pattern and magnitude of measles outbreaks. Higher values of $R_0$ lead to more frequent and intense outbreaks. This underscores the importance of considering seasonal effects in infectious disease modeling.
+The SEIR model with the three(3) varying mean transmission rates(β), which were different due to the different values of reproduction rates, provides a useful structure for
+
+the patterns and understanding the peaks of measles outbreaks in Liverpool and London from 1945 to 1967. Higher transmission rates during the studied periods were evident,
+and the model’s fit improved with the increased Beta values.
+These insights are crucial for public health because it shows
+that if our sample space are children, having them attend
+school during weathers of low humidity exposes them to
+the danger of contracting measles.
 
 ## Repository Contents
 
