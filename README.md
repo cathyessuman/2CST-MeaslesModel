@@ -17,7 +17,7 @@ In this project, we highlight the influence of seasonal variation by the transmi
 ## Objectives
 
 - To understand the influence of seasonal variation in the transmission rate on measles outbreak patterns.
-- To evaluate how different values of the basic reproduction number $ R_0 $ influence the magnitude and recurrence of outbreaks.
+- To evaluate how different values of the basic reproduction number $R_0$ influence the magnitude and recurrence of outbreaks.
 
 ## Methodology
 
