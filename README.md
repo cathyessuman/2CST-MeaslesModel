@@ -26,9 +26,9 @@ In this project, we highlight the influence of seasonal variation by the transmi
 ![SEIR model](images/SEIR model with more details.png)
 
 - **Mean Transmission Rate**: The mean transmission rate $\beta(t)$ varying with time is modeled as:
-  \begin{align}
+  $$
   \beta(t) = \beta_0 \left(1 + 0.08 \sin(\frac{2\pi t}{365})\right)
-  \end{align}
+  $$
   where $\beta_0$ is the mean transmission rate, $0.08$ is the amplitude, and $\pi$ is the phase.
 - **Simulation**: We run simulations for different values of $R_0$ and analyze the resulting outbreak patterns.
 
@@ -42,7 +42,7 @@ The plots below illustrate the fit of the SEIR model to observed measles case da
 
 The SEIR model with the three(3) varying mean transmission rates(β), which were different due to the different values of reproduction rates, provides insights to the relationship between seasonal changes and the spread of measles in Liverpool between 1947 and 1967. Using the sine wave and the step functions along with the SEIR model effectively captures the patterns of measles outbreaks and shows how targeted interventions can make a difference.
 Our key findings include:
-- Significant outbreaks are linked to high transmission rates $R_0 = 18$, highlighting the importance of strict public health measures during these times.
+- Significant outbreaks are linked to high transmission rates $ R_0 = 18 $, highlighting the importance of strict public health measures during these times.
 - The situation shows that closing schools strategically during humid months can lower the severity of measles outbreaks.
 - The sine wave function, used to model seasonal variations, has a crucial impact on infection dynamics and should be included in epidemiological modeling and public health planning.
 
