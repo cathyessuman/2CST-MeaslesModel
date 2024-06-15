@@ -27,7 +27,7 @@ In this project, we highlight the influence of seasonal variation by the transmi
 
 - **Mean Transmission Rate**: The mean transmission rate $\beta(t)$ varying with time is modeled as:
   $$
-  \beta(t) = \beta_0 \left(1 + 0.08 \sin(\frac{2\pi t}{365})\right)
+  $\beta(t)$ = $\beta_0$ $\left(1 + 0.08 \sin(\frac{2\pi t}{365})\right)$
   $$
   where $\beta_0$ is the mean transmission rate, $0.08$ is the amplitude, and $\pi$ is the phase.
 - **Simulation**: We run simulations for different values of $R_0$ and analyze the resulting outbreak patterns.
