@@ -17,11 +17,11 @@ sine_wave <- function(vec, R0) {
 step_func_baseschterm <- function(beta_min, beta_max, vec) {
   init <- numeric(length(vec))
   for (i in seq_along(vec)) {
-    week_of_year <- vec[i] %% 52  # Calculate week of the year (assuming 52 weeks in a year)
+    week_of_year <- vec[i] %% 52  
     if (week_of_year >= 44 | week_of_year < 4) {
-      init[i] <- beta_min  # Schools are on vacation during November to December
+      init[i] <- beta_min  
     } else {
-      init[i] <- beta_max  # Schools are in session for the rest of the year
+      init[i] <- beta_max  
     }
   }
   return(init)
@@ -31,11 +31,11 @@ step_func_baseschterm <- function(beta_min, beta_max, vec) {
 step_func_interschterm <- function(beta_min, beta_max, vec) {
   init <- numeric(length(vec))
   for (i in seq_along(vec)) {
-    week_of_year <- vec[i] %% 52  # Calculate week of the year (assuming 52 weeks in a year)
+    week_of_year <- vec[i] %% 52  
     if (week_of_year >= 26 & week_of_year < 40) {
-      init[i] <- beta_min  # Intervention period during high humid season (June to September)
+      init[i] <- beta_min  
     } else {
-      init[i] <- beta_max  # Schools are in session for the rest of the year
+      init[i] <- beta_max  
     }
   }
   return(init)
