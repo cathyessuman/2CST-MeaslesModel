@@ -1,23 +1,22 @@
-# The Influence of Seasonal Variation in the Transmission Rate on the Recurring Pattern and Magnitude of Measles Outbreak in London and Liverpool Between 1944 and 1994
+# The Influence of Seasonal Variation by the Mean Transmission Rate on the Pattern and Magnitude of Measles Outbreak in Liverpool Between 1947 and 1967
 
-It is an epidemioligic project achieved in context of the [MMED 2024](https://www.ici3d.org/MMED),  a 2­‐week modeling clinic that emphasizes the use of data in understanding infectious disease dynamics. 
+It is an epidemiology project achieved in context of the [MMED 2024](https://www.ici3d.org/MMED), a 2­‐week modeling clinic that emphasizes the use of data in understanding infectious disease dynamics and modeling. 
 
 ## Overview
 
-In this project, we highlight the impact of seasonal variation in the transmission rate on the recurring pattern and magnitude of measles outbreaks in London between 1944 and 1967. Using the SEIR (Susceptible-Exposed-Infectious-Recovered) model, which includes birth and death rates, along with a sinusoidal function to represent the seasonal transmission rate, we simulate the number of infectious individuals over time.
+In this project, we highlight the influence of seasonal variation by the transmission rate on the pattern and magnitude of measles outbreaks in Liverpool between 1947 and 1967. Using the SEIR (Susceptible-Exposed-Infectious-Recovered) model, which includes birth and death rates, along with a sinusoidal function (representing the climatic factors) and step functions (representing the human dynamics) to represent the seasonal transmission rate, we simulate the number of infectious individuals over time given different values of the mean transmission rate (beta) as calculated from the basic reproduction number (R_0).
 
 ## Key Features
 
-- **Seasonal Transmission Rate**: The transmission rate is modeled as a sinusoidal function whose amplitude and magnitude vary as a function of the mean transmission rate $\beta_0$.
+- **Transmission Rate**: The transmission rate is modeled as a sinusoidal function and step functions whose amplitude and magnitude vary as a function of the mean transmission rate $\beta_0$.
 
 - **SEIR Model Parameters**: The model incorporates birth and death rates to provide a realistic simulation of measles dynamics.
-
 
 - **Basic Reproduction Number (R_0)**: We explore different values for the basic reproduction number $R_0$ ranging from 12 to 18, and study their impact on the measles outbreak patterns.
 
 ## Objectives
 
-- To understand the impact of seasonal variation in the transmission rate on measles outbreak patterns.
+- To understand the influence of seasonal variation in the transmission rate on measles outbreak patterns.
 - To evaluate how different values of the basic reproduction number $ R_0 $ influence the magnitude and recurrence of outbreaks.
 
 ## Methodology
@@ -26,25 +25,24 @@ In this project, we highlight the impact of seasonal variation in the transmissi
 
 ![SEIR model](images/SEIR model with more details.png)
 
-- **Sinusoidal Transmission Rate**: The transmission rate $ \beta(t) $ is modeled as:
+- **Mean Transmission Rate**: The transmission rate $ \beta(t) $ is modeled as:
   $$
-  \beta(t) = \beta_0 \left(1 + 0.03 \sin(\frac{2\pi t}{365})\right)
+  \beta(t) = \beta_0 \left(1 + 0.08 \sin(\frac{2\pi t}{365})\right)
   $$
-  where $\beta_0$ is the mean transmission rate, $A$ is the amplitude, and $ \phi $ is the phase.
+  where $\beta_0$ is the mean transmission rate, $0.08$ is the amplitude, and $ \pi $ is the phase.
 - **Simulation**: We run simulations for different values of $R_0$ and analyze the resulting outbreak patterns.
 
 ## Results
 
-The plots below illustrate the fit of the SEIR model to observed measles case data for different values of the transmission rate parameter $ \beta $. Each plot shows both observed (red) and simulated (blue) cases over time.
+The plots below illustrate the fit of the SEIR model to observed measles case data for different values of the transmission rate parameter $ \beta $. Each plot shows both observed (green) and simulated (red and blue) cases over time.
 
 <!--![SEIR Model Fit for Liverpool dataset](images/Liverpool/LPool_betachange.png)
-![SEIR Model Fit for London dataset](images/London/Ldn_betachange.png)-->
 
 ## Conclusion
 
 The SEIR model with the three(3) varying mean transmission rates(β), which were different due to the different values of reproduction rates, provides a useful structure for
 
-the patterns and understanding the peaks of measles outbreaks in Liverpool and London from 1945 to 1967. Higher transmission rates during the studied periods were evident,
+the patterns and understanding the peaks of measles outbreaks in Liverpool from 1947 to 1967. Higher transmission rates during the studied periods were evident,
 and the model’s fit improved with the increased Beta values.
 These insights are crucial for public health because it shows
 that if our sample space are children, having them attend
