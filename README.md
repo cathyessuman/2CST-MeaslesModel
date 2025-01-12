@@ -4,7 +4,7 @@ It is an epidemiology project achieved in context of the [MMED 2024](https://www
 
 ## Overview
 
-In this project, we highlight the influence of seasonal variation by the transmission rate on the pattern and magnitude of measles outbreaks in Liverpool between 1947 and 1967. Using the SEIR (Susceptible-Exposed-Infectious-Recovered) model, which includes birth and death rates, along with a sinusoidal function (representing the climatic factors) and step functions (representing the human dynamics) to represent the seasonal transmission rate, we simulate the number of infectious individuals over time given different values of the mean transmission rate (beta) as calculated from the basic reproduction number (R_0).
+In this project, we highlight the influence of seasonal variation by the transmission rate on the pattern and magnitude of measles outbreaks in Liverpool between 1947 and 1967 using simulated data. Using the SEIR (Susceptible-Exposed-Infectious-Recovered) model, which includes birth and death rates, along with a sinusoidal function (representing the climatic factors) and step functions (representing the human dynamics) to represent the seasonal transmission rate, we simulate the number of infectious individuals over time given different values of the mean transmission rate (beta) as calculated from the basic reproduction number (R_0).
 
 ## Key Features
 
