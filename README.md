@@ -36,7 +36,7 @@ In this project, we highlight the influence of seasonal variation by the transmi
 
 The plots below illustrate the fit of the SEIR model to observed measles case data for different values of the transmission rate parameter $\beta$. Each plot shows both observed (green) and simulated (red and blue) cases over time.
 
-$<!--![SEIR Model Fit for Liverpool dataset](images/Liverpool/LPool_betachange.png)$
+$<!--![SEIR Model Fit for Liverpool dataset](images/Liverpool/LPool_betachange1.png)$
 
 ## Conclusion
 
